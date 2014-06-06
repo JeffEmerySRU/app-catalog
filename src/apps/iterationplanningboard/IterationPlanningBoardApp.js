@@ -60,6 +60,7 @@
 
             this.gridboard = this.add({
                 xtype: 'iterationplanningboardapptimeboxgridboard',
+                app: this,
                 context: this.getContext(),
                 modelNames: this.modelNames,
                 toggleState: 'board',

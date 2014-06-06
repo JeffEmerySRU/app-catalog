@@ -113,7 +113,9 @@
                 },
                 columnHeaderConfig: {
                     headerTpl: 'Backlog'
-                }
+                },
+                height : this.app.getHeight(),
+                autoScroll : true
             }];
 
             Ext.Array.each(timeboxes, function(timeboxRecords) {
@@ -124,7 +126,9 @@
                         record: timeboxRecords[0],
                         fieldToDisplay: 'Name',
                         editable: false
-                    }
+                    },
+                    height : this.app.getHeight(),
+                    autoScroll : true
                 });
             }, this);
 
