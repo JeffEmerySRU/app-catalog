@@ -114,6 +114,7 @@
                 columnHeaderConfig: {
                     headerTpl: 'Backlog'
                 },
+                    // Adjust height of column to equal page minus height of headers
                 height : this.app.getHeight() - (97+46+30),
                 autoScroll : true
             }];
