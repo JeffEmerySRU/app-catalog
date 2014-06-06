@@ -114,7 +114,7 @@
                 columnHeaderConfig: {
                     headerTpl: 'Backlog'
                 },
-                height : this.app.getHeight(),
+                height : this.app.getHeight() - (97+46+30),
                 autoScroll : true
             }];
 
@@ -127,7 +127,7 @@
                         fieldToDisplay: 'Name',
                         editable: false
                     },
-                    height : this.app.getHeight(),
+                    height : this.app.getHeight() - (97+46+30),
                     autoScroll : true
                 });
             }, this);
