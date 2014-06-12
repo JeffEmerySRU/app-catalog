@@ -24,7 +24,6 @@
             var indexOfNewColumn = Ext.Array.indexOf(this.cmp.getColumns(), insertNextToColumn);
             this.cmp.destroyColumn(this._getColumnToRemove(forwards));
 
-            //var column = this.cmp.addColumn({timeboxRecords: newlyVisibleRecords}, indexOfNewColumn);
 			var column = this.cmp.addColumn( {timeboxRecords: newlyVisibleRecords, height : this.cmp.getHeight() - (97+30), autoScroll : true }, indexOfNewColumn);
             column.on('ready', this._onNewlyAddedColumnReady, this, {single: true});
 
